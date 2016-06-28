@@ -18,11 +18,11 @@
     "node": "0.6"
   },
   "dependencies": {
-    "coffee-script": "1",
+    "coffee-script": "1.2.0",
     "villain": "=0.2.0",
     "faye-websocket": "0.4",
     "connect": "2",
-    "irc-js": "2",
+    "irc-js": "0.2.4",
     "browserify": "1.10"
   },
 
