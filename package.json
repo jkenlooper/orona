@@ -21,7 +21,7 @@
     "coffee-script": "1.2.0",
     "villain": "=0.2.0",
     "faye-websocket": "0.4",
-    "connect": "2",
+    "connect": "<2.8",
     "irc-js": "0.2.4",
     "browserify": "1.10"
   },

@@ -79,13 +79,16 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
     (
+    export NVM_DIR="/home/vagrant/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
     nvm install 0.10.32
     npm install -g coffee-script@1.2.0
     cd /vagrant
     git submodule update --init
     npm install
     cake build
-    ./bin/bolo-server orona-config.json
+    nvm install 0.6
+    nvm use 0.6
     )
   SHELL
 end
